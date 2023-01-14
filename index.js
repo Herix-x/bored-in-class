@@ -4,7 +4,7 @@ document.body.style.backgroundColor = 'black';
 var ball = document.createElement('div');
 ball.style.width = '100px';
 ball.style.height = '100px';
-ball.style.backgroundColor = 'transparent';
+ball.style.backgroundColor = 'white';
 ball.style.borderRadius = '50px';
 ball.style.position = 'absolute';
 ball.style.top = '50%';
@@ -18,10 +18,10 @@ ball.style.height = '20px';
 ball.style.marginLeft = '-10px';
 ball.style.marginTop = '-10px';
 /* animate horizontally and vertically */
-var x = Math.random() * (window.innerWidth - 20);
-var y = Math.random() * (window.innerWidth - 20);
-var dx = 15;
-var dy = 15;
+var x = 0;
+var y = 0;
+var dx = 1;
+var dy = 1;
 var animate = function() {
   x += dx;
   y += dy;
@@ -44,6 +44,9 @@ var animate = function() {
   ball.style.top = y + 'px';
   window.requestAnimationFrame(animate);
 };
+/* random ball position */
+var x = 0
+var y = 0
 /* make the ball have a trail */
 var trail = document.createElement('div');
 trail.style.position = 'absolute';
@@ -101,3 +104,4 @@ var animate = function() {
   dot.style.marginTop = '-5px';
   trail.appendChild(dot);
   window.requestAnimationFrame(animate);
+};
