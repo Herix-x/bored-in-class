@@ -18,8 +18,8 @@ ball.style.height = '20px';
 ball.style.marginLeft = '-10px';
 ball.style.marginTop = '-10px';
 /* animate horizontally and vertically */
-var x = 0;
-var y = 0;
+var x = 15;
+var y = 15;
 var dx = 15;
 var dy = 15;
 var animate = function() {
@@ -44,9 +44,6 @@ var animate = function() {
   ball.style.top = y + 'px';
   window.requestAnimationFrame(animate);
 };
-/* random ball position */
-var x = 0
-var y = 0
 /* make the ball have a trail */
 var trail = document.createElement('div');
 trail.style.position = 'absolute';
