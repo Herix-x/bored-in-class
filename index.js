@@ -20,8 +20,8 @@ ball.style.marginTop = '-10px';
 /* animate horizontally and vertically */
 var x = 0;
 var y = 0;
-var dx = 1;
-var dy = 1;
+var dx = 15;
+var dy = 15;
 var animate = function() {
   x += dx;
   y += dy;
