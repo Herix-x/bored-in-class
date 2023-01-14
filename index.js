@@ -10,7 +10,6 @@ text.style.color = 'white';
 text.style.fontFamily = 'monospace';
 text.style.fontSize = '20px';
 text.style.padding = '10px';
-text.innerHTML = '<br>Corner Hit: ' + count;
 
 /* white ball */
 var ball = document.createElement('div');
@@ -40,6 +39,7 @@ var animate = function() {
   ball.style.left = x + 'px';
   ball.style.top = y + 'px';
   
+  text.innerHTML = '<br>count: ' + count;
   if (x < 20 && y < 20) {
     count++;
   }
