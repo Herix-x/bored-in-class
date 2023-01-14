@@ -12,8 +12,8 @@ ball.style.marginLeft = '-10px';
 ball.style.marginTop = '-10px';
 document.body.appendChild(ball);
 
-var x = Math.random() * (window.innerWidth - 20);
-var y = Math.random() * (window.innerHeight - 20);
+var x = 1;
+var y = 1;
 var dx = 15;
 var dy = 15;
 var animate = function() {
