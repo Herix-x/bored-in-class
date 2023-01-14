@@ -1,5 +1,3 @@
-Clear all
-Export to JSFiddle
 /* black background */
 document.body.style.backgroundColor = 'black';
 /* white ball */
