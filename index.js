@@ -12,8 +12,8 @@ ball.style.marginLeft = '-10px';
 ball.style.marginTop = '-10px';
 document.body.appendChild(ball);
 
-var x = 1;
-var y = 1;
+var x = 0;
+var y = 0;
 var dx = 15;
 var dy = 15;
 var animate = function() {
