@@ -1,5 +1,17 @@
 /* black background */
 document.body.style.backgroundColor = 'black';
+
+var count = 0
+var text = document.createElement('div');
+text.style.position = 'absolute';
+text.style.bottom = '0px';
+text.style.right = '0px';
+text.style.color = 'white';
+text.style.fontFamily = 'monospace';
+text.style.fontSize = '20px';
+text.style.padding = '10px';
+text.innerHTML = 'x: ' + x + '<br>y: ' + y + '<br>count: ' + count;
+
 /* white ball */
 var ball = document.createElement('div');
 ball.style.width = '100px';
@@ -42,5 +54,19 @@ var animate = function() {
   }
   ball.style.left = x + 'px';
   ball.style.top = y + 'px';
+  
+    if (x < 20 && y < 20) {
+    count++;
+  }
+  if (x > window.innerWidth - 20 && y < 20) {
+    count++;
+  }
+  if (x < 20 && y > window.innerHeight - 20) {
+    count++;
+  }
+  if (x > window.innerWidth - 20 && y > window.innerHeight - 20) {
+    count++;
+  }
+  
   window.requestAnimationFrame(animate);
 };
