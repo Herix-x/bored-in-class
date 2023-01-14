@@ -10,7 +10,7 @@ text.style.color = 'white';
 text.style.fontFamily = 'monospace';
 text.style.fontSize = '20px';
 text.style.padding = '10px';
-text.innerHTML = 'x: ' + x + '<br>y: ' + y + '<br>Corner Hit: ' + count;
+text.innerHTML = '<br>Corner Hit: ' + count;
 
 /* white ball */
 var ball = document.createElement('div');
