@@ -7,7 +7,6 @@ text.style.position = 'absolute';
 text.style.bottom = '0px';
 text.style.right = '0px';
 text.style.color = 'white';
-text.style.fontFamily = 'monospace';
 text.style.fontSize = '20px';
 text.style.padding = '10px';
 
