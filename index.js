@@ -39,6 +39,20 @@ var animate = function() {
   y += dy;
   ball.style.left = x + 'px';
   ball.style.top = y + 'px';
+  
+  if (x < 20 && y < 20) {
+    count++;
+  }
+  if (x > window.innerWidth - 20 && y < 20) {
+    count++;
+  }
+  if (x < 20 && y > window.innerHeight - 20) {
+    count++;
+  }
+  if (x > window.innerWidth - 20 && y > window.innerHeight - 20) {
+    count++;
+  }
+  
   window.requestAnimationFrame(animate);
 };
 animate();
@@ -54,19 +68,7 @@ var animate = function() {
   }
   ball.style.left = x + 'px';
   ball.style.top = y + 'px';
-  
-    if (x < 20 && y < 20) {
-    count++;
-  }
-  if (x > window.innerWidth - 20 && y < 20) {
-    count++;
-  }
-  if (x < 20 && y > window.innerHeight - 20) {
-    count++;
-  }
-  if (x > window.innerWidth - 20 && y > window.innerHeight - 20) {
-    count++;
-  }
+ 
   
   window.requestAnimationFrame(animate);
 };
