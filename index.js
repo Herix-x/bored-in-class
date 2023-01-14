@@ -20,8 +20,8 @@ ball.style.marginTop = '-10px';
 /* animate horizontally and vertically */
 var x = Math.random() * (window.innerWidth - 20);
 var y = Math.random() * (window.innerWidth - 20);
-var dx = 25;
-var dy = 25;
+var dx = 17;
+var dy = 17;
 var animate = function() {
   x += dx;
   y += dy;
